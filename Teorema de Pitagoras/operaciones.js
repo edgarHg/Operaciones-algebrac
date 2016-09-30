@@ -3,11 +3,6 @@ function TeoremaPitagoras(a, b, c){
 	this.b = b;
 	this.c = c;
 
-	this.CalcularAngulo = function(){
-		var a1 = this.a;
-		return true;
-	};
-
 	this.calcularCatetoA = function(){
 		var catetoA = Math.sqrt(Math.pow(this.c, 2) - Math.pow(this.b, 2));
 		return catetoA;
@@ -17,6 +12,7 @@ function TeoremaPitagoras(a, b, c){
 		var catetoB = Math.sqrt(Math.pow(this.c, 2) - Math.pow(this.a, 2));
 		return catetoB;
 	};
+
 	this.CalcularHipotenusa = function(){
 		var hipotenusa = Math.sqrt(Math.pow(this.a, 2) + Math.pow(this.b, 2));
 		return hipotenusa;
